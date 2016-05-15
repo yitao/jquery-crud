@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jquery-插件模板</title>
+<link type="text/css" rel="stylesheet" href="lib/jquery-easyui-1.3.5/themes/default/easyui.css">
+<!-- <link type="text/css" rel="stylesheet" href="css/base.css"/> -->
+<script type="text/javascript" src="lib/jquery-easyui-1.3.5/jquery-1.10.2.min.js?t=1"></script>
+<script type="text/javascript" src="lib/jquery-easyui-1.3.5/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="lib/jquery.tmpl.js"></script>
+<script charset="utf-8" src="lib/layer/layer.js"></script>
+<script type="text/javascript" src="../jquery-dataform-0.1/jquery.dataform.js"></script>
+<script charset="utf-8" src="jquery.crud-0.0.2.js"></script>
+<style type="text/css">
+	html,body{
+		width:100%;
+		height:100%;
+		padding:0;
+		margin:0;
+	}
+</style>
+</head>
+
+<body>
+	<div style="width:100%;height:100%;">
+		<div id="ftype" style="height:100%;width:500px;display:inline-block;vertical-align: top;"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	var opts = {
+			addUrl:"../../admin/addfadealertype",
+			deleteUrl:"../../admin/deletefadealertype",
+			updateUrl:"../../admin/updatefadealertype",
+			queryUrl:"../../admin/queryfadealertype",
+			datagrid:{
+				columns:[[      
+		          {field:"name",title:"类型名称",width:140,align:"center"},    
+		          {field:"code",title:"编码",width:140,align:"center"},    
+		          {field:"img",title:"图片",width:100,align:"center"},    
+		          {field:"intro",title:"简介",width:80,align:"center"},   
+		          {field:"order",title:"排序值",width:80,align:"center"} 
+		      	]]
+			},
+			dataform:{
+				LineWidth: "260px",
+				LineHeight: "32px",
+				columns:[[
+						{label:"类型名称",field:"name",dataType:"string",showType:"text"}
+						,{label:"编码",field:"code",dataType:"string",showType:"text"}
+						,{label:"图片",field:"img",dataType:"string",showType:"text"}
+						,{label:"简介",field:"intro",dataType:"string",showType:"text"}
+						,{label:"排序值",field:"order",dataType:"integer",showType:"text"}
+				]]
+			}
+	};
+	var ftype;
+	$(function(){
+		ftype = $("#ftype").crud(opts);
+	});
+</script>
+</html>

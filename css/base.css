@@ -1,0 +1,192 @@
+.icon-add:hover,.icon-remove:hover,.icon-edit:hover,.icon-detail:hover{
+	/*outline: 1px solid #00f;*/
+	background-color:#33ACFF;
+}
+
+.datagrid .icon-add,.icon-remove,.icon-edit,.icon-detail{
+    margin-top: -12px;
+    margin-left: -4px;
+}
+
+.icon-add{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border:0px;
+	border-collapse:collapse;
+	padding:0;
+	background: url("./img/icons_01.png") -277px -60px no-repeat;
+}
+.icon-remove{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border:0px;
+	border-collapse:collapse;
+	padding:0;
+	background: url("./img/icons_01.png") -167px -132px no-repeat;
+}
+.icon-edit{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border:0px;
+	border-collapse:collapse;
+	padding:0;
+	background: url("./img/icons_01.png") -203px -277px no-repeat;
+}
+.icon-detail{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border:0px;
+	border-collapse:collapse;
+	padding:0;
+	background: url("./img/icons_01.png") -131px -95px no-repeat;
+}
+
+
+
+/* form */
+.dataform_panel{
+	font-family: Georgia,"Times New Roman",Times,Kai,"Kaiti SC",KaiTi,BiauKai,FontAwesome,serif;
+}
+
+.dataform_panel .labelBox{
+	width: 80px;
+	height: 100%;
+	margin: 4px 0;
+	text-align: right;
+}
+
+.dataform_panel .linetext{
+	width: auto;
+	height: 100%;
+	margin: 4px 0;
+	display:inline-block;
+}
+
+.dataform_panel .valueBox{
+	width: auto;
+	height: auto;
+	margin: 4px 0 4px 4px;
+}
+
+.dataform_panel .valueBox input[type='text'],input[type='password']{
+	width:260px;
+	height: 26px;
+	line-height: 26px;
+}
+.valueBox input[type='radio'],input[type='checkbox']{
+	line-height: 26px;
+}
+
+.dataform_panel .btnBox{
+	width: 100%;
+	height: 26px;
+	margin: 4px 0;
+}
+
+.dataform_panel button{
+	font-family: Georgia,"Times New Roman",Times,Kai,"Kaiti SC",KaiTi,BiauKai,FontAwesome,serif;
+	font-size: 16px;
+	font-weight: 20px;
+	height: 26px;
+	width: 70px;
+	margin-right: 20px;
+	float: right;
+}
+
+.dataform_panel input.imageInput{
+	width:60%;
+}
+.dataform_panel .imageBtn{
+	margin-left:20px;
+	float:none;
+}
+
+/* jquery imagebox*/
+.imagebox_container{
+	width:100%;
+	height:100%;
+	background-color: #eee;
+	border: 1px solid #ccc;
+}
+.imagebox_toolbar{
+	width:100%;
+	height:auto;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+}
+.imagebox_toolbar #imagebox_upload{
+    width: 60px;
+    height: 30px;
+    margin: 4px;
+    float: none;
+}
+.imagebox_box{
+	width:100%;
+	height:300px;
+	overflow:auto;
+	position:relative;
+	white-space: nowrap;
+}
+
+.imagebox_box .imagebox_item{
+	margin:10px;
+	width:80px;
+	height:80px;
+	display:inline-block;
+	vertical-align: top;
+}
+
+
+.imagebox_mark_panel{
+	position: absolute;
+    z-index: 9002;
+    display: block;
+    background-color:rgba(0,0,0,0.3);
+    width: 25px;
+    height:25px;
+    left: 0px;
+    top: 0px;
+}
+
+.imagebox_btn_delete{
+	display:inline-block;
+	width:25px;
+	height:25px;
+	border:0px;
+	border-collapse:collapse;
+	padding:0;
+	background: url("img/icons_01.png") -167px -132px no-repeat;
+}
+
+
+/* bmap 基础样式*/
+#searchbarbox{
+	width:100%;
+	height:60px;
+	background-color:rgba(0,0,0,0.1);
+	z-index: 1;
+	position: relative;
+}
+#searchbar{
+	width: 284px;
+	height: 36px;
+	margin: auto;
+	padding: 12px 0;
+}
+#searchbar input{
+	width:220px;
+	height:30px;
+	line-height:30px;
+} 
+#searchbar button{
+	width:60px;
+	height: 36px;
+	margin: 0;
+   	float: none;
+}
+
+
